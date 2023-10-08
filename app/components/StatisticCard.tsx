@@ -38,9 +38,9 @@ const StatisticCard: React.FC<StatisticCardProps> = function StatisticCard({
     setIsHovered(false);
   };
 
-  const cardClass = `min-h-[244px] icon-bg relative flex justify-end flex-col  h-full rounded-2xl transition-all ${
+  const cardClass = `min-h-[15.25rem] icon-bg relative flex justify-end flex-col  h-full rounded-2xl transition-all ${
     classMap[title] || classMap.Play
-  } ${isHovered ? "pt-[40px]" : "pt-[45px]"}`;
+  } ${isHovered ? "pt-[2.5rem]" : "pt-[2.8125rem]"}`;
 
   return (
     <motion.div
@@ -61,7 +61,7 @@ const StatisticCard: React.FC<StatisticCardProps> = function StatisticCard({
           className="flex items-center justify-between"
           variants={textVariants}
         >
-          <h2 className="mt-[3px] font-medium">
+          <h2 className="mt-[0.1875rem] font-medium">
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a href="#" className="card-link">
               <span className="sr-only">Details for </span>
@@ -72,14 +72,14 @@ const StatisticCard: React.FC<StatisticCardProps> = function StatisticCard({
         </motion.div>
 
         <motion.p
-          className="font-hours lg:p-card-hours font-light leading-[66px]"
+          className="font-hours lg:p-card-hours font-light leading-[4.125rem]"
           variants={textVariants}
         >
           {current}
           hrs
         </motion.p>
         <motion.p
-          className="text-[15px] text-pale-blue"
+          className="text-[0.9375rem] text-pale-blue"
           variants={textVariants}
         >
           Last Week -

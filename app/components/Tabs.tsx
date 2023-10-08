@@ -63,7 +63,7 @@ const Tabs: React.FC<TabsProps> = function Tabs({ timeFrames }) {
             aria-selected={activeTab === index}
             aria-controls={`tab-panel-${index}`}
             tabIndex={activeTab === index ? 0 : -1}
-            className="tab-button | lg:tab-button-padding w-full py-6 leading-[21px] text-desaturated-blue hover:text-very-soft-blue"
+            className="tab-button | lg:tab-button-padding w-full py-6 leading-[1.3125rem] text-desaturated-blue hover:text-very-soft-blue"
             onClick={() => setActiveTab(index)}
             onKeyDown={(e) => handleTabKeyDown(e, index)}
           >

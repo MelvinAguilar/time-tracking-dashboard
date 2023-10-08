@@ -46,7 +46,7 @@ export default function Home() {
     <main>
       <h1 className="sr-only">{title}</h1>
 
-      <div className="grid max-w-[1110px] gap-[30px] lg:grid-cols-[0.9273fr_3fr]">
+      <div className="grid max-w-[69.375rem] gap-[1.875rem] lg:grid-cols-[0.9273fr_3fr]">
         <motion.div
           className="rounded-2xl bg-dark-blue"
           initial="hidden"
@@ -54,7 +54,7 @@ export default function Home() {
           variants={animatePresence}
         >
           <motion.div
-            className="lg:profile flex min-h-[112px] flex-row items-center gap-5 rounded-2xl bg-blue p-6 lg:flex-col lg:items-start origin-top lg:gap-[38px]"
+            className="lg:profile flex min-h-[7rem] flex-row items-center gap-5 rounded-2xl bg-blue p-6 lg:flex-col lg:items-start origin-top lg:gap-[2.375rem]"
             initial="hidden"
             animate="visible"
             variants={profileContainer}
@@ -65,13 +65,13 @@ export default function Home() {
                 alt="Jeremy Robson"
                 width={84}
                 height={84}
-                className="w-16 rounded-full border-[3px] border-white lg:w-[84px]"
+                className="w-16 rounded-full border-[0.1875rem] border-white lg:w-[5.25rem]"
                 priority
               />
             </motion.div>
 
             <motion.p
-              className="lg:name-padding flex flex-col text-[15px] text-pale-blue"
+              className="lg:name-padding flex flex-col text-[0.9375rem] text-pale-blue"
               variants={textVariants}
             >
               {reportText}

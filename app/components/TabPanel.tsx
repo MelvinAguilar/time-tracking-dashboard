@@ -69,7 +69,7 @@ const TabPanel: React.FC<TabPanelProps> = function TabPanel({ index }) {
     >
       <ul
         role="list"
-        className="grid h-full gap-[30px] sm:grid-cols-2 md:grid-cols-3"
+        className="grid h-full gap-[1.875rem] sm:grid-cols-2 md:grid-cols-3"
       >
         <AnimatePresence>
           {data.map((item: Activity, indexMap: number) => (

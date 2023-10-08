@@ -9,7 +9,7 @@
     <a href="https://www.frontendmentor.io/profile/MelvinAguilar"><strong>Frontend Mentor Challenge</strong></a>
     <br />
     <br />
-    <a href="https://www.frontendmentor.io/profile/MelvinAguilar">View Demo</a>
+    <a href="https://time-tracking-dashboard-hdez.vercel.app/">View Demo</a>
     ·
     <a href="https://github.com/MelvinAguilar/time-tracking-dashboard/issues" target="_blank">Report Bug</a>
     ·
@@ -93,7 +93,8 @@ Users should be able to:
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [Client-side Fetching](https://nextjs.org/docs/pages/building-your-application/data-fetching/client-side) 
+- [Client-side Fetching - Next.js](https://nextjs.org/docs/pages/building-your-application/data-fetching/client-side) 
+- [Route Handlers - Next.js](https://nextjs.org/docs/app/building-your-application/routing/route-handlers#cors) - A solution to "Type error: Route `...` has an invalid export"
 
 ## Author
 
