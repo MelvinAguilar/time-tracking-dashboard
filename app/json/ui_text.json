@@ -1,0 +1,6 @@
+{
+  "title": "Time Tracking Dashboard",
+  "reportText": "Report for",
+  "reportFor": "Jeremy Robson",
+  "timeFrames": ["Daily", "Weekly", "Monthly"]
+}

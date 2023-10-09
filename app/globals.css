@@ -2,26 +2,168 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+/* :root {
+  --custom-padding-block: 1.5rem;
+} */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  body {
+    font-size: 18px;
+    font-family: "Rubik", sans-serif;
+  }
+
+  div[hidden] {
+    display: none;
+  }
+
+  :is(a, button, input, textarea, select, details, summary):focus-visible {
+    outline: white solid 0.188rem;
+    outline-offset: 0.188rem;
+  }
+
+  .h-dynamic-screen {
+    min-height: 100vh;
+    min-height: 100dvh;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+@layer components {
+
+  /* START: Default styles */
+  button[aria-expanded="true"]+.tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .name-padding {
+    @apply ml-[4px];
+  }
+
+  .profile {
+    padding: 34px 29px 79.32px;
+  }
+
+  .p-card {
+    padding: 24px 26px 22px 30px;
+  }
+
+  .p-card-hours {
+    margin-block: 22px 6px;
+  }
+
+  .clamp-title {
+    font-size: clamp(1.5rem, 3vw, 37px);
+  }
+
+  .font-title {
+    line-height: 1.3;
+    letter-spacing: 2px;
+  }
+
+  .font-hours {
+    letter-spacing: -0.6px;
+    margin-block: 21px 6px;
+    font-size: 57px;
+  }
+
+  .filter-white {
+    filter: brightness(0) invert(1);
+  }
+
+  /* END: Default styles */
+
+  /* START: Background images [pixel-perfect] */
+  .icon-bg {
+    background-repeat: no-repeat;
+  }
+
+  .bg-work {
+    background-position: 91% -6%;
+  }
+
+  .bg-play {
+    background-position: 88% -3%;
+  }
+
+  .bg-study {
+    background-position: 90.5% -4%;
+  }
+
+  .bg-exercise {
+    background-position: 90% top;
+  }
+
+  .bg-social {
+    background-position: 92% top;
+  }
+
+  .bg-self-care {
+    background-position: 92% -6%;
+  }
+
+  /* END: Background images [pixel-perfect] */
+
+  /* START: Styles for the button of each tab */
+  .tab-button[aria-selected="true"] {
+    @apply text-white;
+  }
+
+  .tab-button-padding {
+    padding-left: 31px;
+    padding-block: 11px;
+    text-align: start;
+  }
+
+  @media screen(lg) {
+    #tab-button-0 {
+      margin-top: 13px;
+      padding-block: 13px 9px;
+    }
+
+    #tab-button-2 {
+      margin-bottom: 22px;
+    }
+  }
+
+  /* END: Styles for the button of each tab */
+
+  /* START: Link of the card */
+  .card-link {
+    outline: none !important;
+  }
+
+  .card-link::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    @apply rounded-2xl;
+  }
+
+  .card-link:focus::after {
+    outline: white solid 0.17rem;
+    outline-offset: 0.2rem;
+  }
+
+  /* END: Link of the card */
+
+  /* START: Styles for the tooltip */
+  .tooltip::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0.5rem;
+    border-color: theme('colors.very-light-blue') transparent transparent transparent;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .tooltip {
+    bottom: 250%;
+  }
+
+  /* END: Styles for the tooltip */
 }
