@@ -11,9 +11,9 @@
     <br />
     <a href="https://www.frontendmentor.io/profile/MelvinAguilar">View Demo</a>
     ·
-    <a href="https://github.com/MelvinAguilar/" target="_blank">Report Bug</a>
+    <a href="https://github.com/MelvinAguilar/time-tracking-dashboard/issues" target="_blank">Report Bug</a>
     ·
-    <a href="https://github.com/MelvinAguilar/" target="_blank">Request Feature</a>
+    <a href="https://github.com/MelvinAguilar/time-tracking-dashboard/issues" target="_blank">Request Feature</a>
   </p>
 </div>
 

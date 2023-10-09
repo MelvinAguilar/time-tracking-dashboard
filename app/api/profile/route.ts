@@ -1,8 +1,8 @@
 import path from "path";
 import { promises as fs } from "fs";
-import { NextResponse } from "next/server";
 
-export default async function GET() {
+// eslint-disable-next-line import/prefer-default-export
+export async function GET() {
   try {
     const jsonDirectory = path.join(process.cwd(), "app/json");
 
@@ -14,11 +14,21 @@ export default async function GET() {
     const parsedUiTextContents = JSON.parse(uiTextContents);
     const parsedTimeEntriesContents = JSON.parse(timeEntriesContents);
 
-    return NextResponse.json({
+    const responseBody = JSON.stringify({
       uiText: parsedUiTextContents,
       timeEntries: parsedTimeEntriesContents,
     });
+
+    return new Response(responseBody, {
+      status: 200,
+      headers: {
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "Content-Type, Authorization",
+      },
+    });
   } catch (error) {
-    return "Internal Server Error";
+    return new Response("Internal Server Error", { status: 500 });
   }
 }
