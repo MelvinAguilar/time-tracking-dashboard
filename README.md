@@ -6,7 +6,7 @@
 
   <h2 align="center">Time tracking dashboard solution</h2>
   <p align="center">
-    <a href="https://www.frontendmentor.io/profile/MelvinAguilar"><strong>Frontend Mentor Challenge</strong></a>
+    <a href="https://www.frontendmentor.io/solutions/time-tracking-dashboard-nextjs-typescript-tailwind-css-eslint-ER5VDDiJ2i"><strong>Frontend Mentor Challenge</strong></a>
     <br />
     <br />
     <a href="https://time-tracking-dashboard-hdez.vercel.app/">View Demo</a>
@@ -25,7 +25,7 @@
   </a>
   <!-- Status -->
     <a href="#">
-    <img src="https://img.shields.io/badge/status-Improving_Performance-orange?style=for-the-badge" alt="Improving Performance">
+    <img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge" alt="Status Completed">
   </a>
 
 </div>
@@ -43,6 +43,9 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
 
 <h2 align="center">Links</h2>
 
+
+- Solution URL: [Time tracking dashboard (Next.js + TypeScript + Tailwind CSS + ESLint) | Frontend Mentor](https://www.frontendmentor.io/solutions/time-tracking-dashboard-nextjs-typescript-tailwind-css-eslint-ER5VDDiJ2i)
+- Live Site URL: [https://time-tracking-dashboard-hdez.vercel.app/](https://time-tracking-dashboard-hdez.vercel.app/)
 
 <br>
 
