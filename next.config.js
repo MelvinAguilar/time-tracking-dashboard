@@ -1,7 +1,12 @@
-/** @type {import('next').NextConfig} **/
+/** @type {import('next').NextConfig} */
+const CompressionPlugin = require('compression-webpack-plugin');
 
-const withPWA = require("next-pwa")({
-    dest: "public",
-});
-  
-module.exports = withPWA({});
+const nextConfig = {
+  webpack: function(config) {
+    config.plugins.push(new CompressionPlugin());
+    
+    return config;
+  }
+}
+
+module.exports = nextConfig

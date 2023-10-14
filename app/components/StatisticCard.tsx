@@ -38,7 +38,7 @@ const StatisticCard: React.FC<StatisticCardProps> = function StatisticCard({
     setIsHovered(false);
   };
 
-  const cardClass = `min-h-[15.25rem] icon-bg relative flex justify-end flex-col  h-full rounded-2xl transition-all ${
+  const cardClass = `min-h-[15.25rem] icon-bg relative flex justify-end flex-col h-full rounded-2xl transition-all ${
     classMap[title] || classMap.Play
   } ${isHovered ? "pt-[2.5rem]" : "pt-[2.8125rem]"}`;
 
@@ -50,7 +50,7 @@ const StatisticCard: React.FC<StatisticCardProps> = function StatisticCard({
       variants={animatePresence}
     >
       <motion.div
-        className="origin-bottom lg:p-card relative h-full rounded-2xl bg-dark-blue p-8 transition hover:bg-light-blue"
+        className="origin-bottom lg:p-card relative h-full rounded-2xl bg-dark-blue p-8 transition-all hover:bg-light-blue"
         onMouseEnter={handleHover}
         onMouseLeave={handleMouseLeave}
         initial="hidden"

@@ -30,7 +30,7 @@ interface DataContextProviderProps {
 export const DataContextProvider = function DataContextProvider({
   children,
 }: DataContextProviderProps) {
-  const [activeTab, setActiveTab] = useState(0);
+  const [activeTab, setActiveTab] = useState(1);
   const [timeEntriesData, setTimeEntriesData] = useState<Activity[]>([]);
 
   const memoizedValue = useMemo(

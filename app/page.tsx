@@ -2,7 +2,7 @@
 
 import React, { useContext } from "react";
 import Image from "next/image";
-import useSWR from "swr";
+import useSWR, { preload } from "swr";
 import { motion } from "framer-motion";
 import Tabs from "./components/Tabs";
 import TabPanel from "./components/TabPanel";
@@ -17,6 +17,9 @@ import DataContext from "./store/DataContext";
 // A fetcher function to wrap the native fetch function
 // and return the result of a call to url in json format
 const fetcher = (url: RequestInfo | URL) => fetch(url).then((res) => res.json());
+
+// Preload the resource before rendering the Home component below
+preload("/api/profile", fetcher);
 
 export default function Home() {
   const { data, error } = useSWR("/api/profile", fetcher);
@@ -75,7 +78,7 @@ export default function Home() {
               variants={textVariants}
             >
               {reportText}
-              <span className="clamp-title font-title font-rubik font-light text-white">
+              <span className="clamp-title font-title font-light text-white">
                 {reportFor}
               </span>
             </motion.p>

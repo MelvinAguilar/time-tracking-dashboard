@@ -5,7 +5,6 @@
 @layer base {
   body {
     font-size: 1.125rem;
-    font-family: "Rubik", sans-serif;
   }
 
   div[hidden] {
@@ -22,7 +21,6 @@
     min-height: 100dvh;
   }
 }
-
 
 @layer components {
 

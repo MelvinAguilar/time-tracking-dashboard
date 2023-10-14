@@ -95,6 +95,8 @@ Users should be able to:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 - [Client-side Fetching - Next.js](https://nextjs.org/docs/pages/building-your-application/data-fetching/client-side) 
 - [Route Handlers - Next.js](https://nextjs.org/docs/app/building-your-application/routing/route-handlers#cors) - A solution to "Type error: Route `...` has an invalid export"
+- [Getting Started into SWR](https://swr.vercel.app/docs/getting-started)
+- [Prefetching Data with SWR](https://swr.vercel.app/docs/prefetching)
 
 ## Author
 

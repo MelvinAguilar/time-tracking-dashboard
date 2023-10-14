@@ -1,5 +1,5 @@
-const animationDuration = 0.5;
-const animationDelay = 0.5;
+const animationDuration = 0.0;
+const animationDelay = 0.0;
 
 export const animatePresence = {
   hidden: { opacity: 0 },
